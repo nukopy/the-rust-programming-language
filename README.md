@@ -9,10 +9,17 @@ Rust やる
 - 勉強メモ
   - https://zenn.dev/pyteyon/scraps/4e04a66ce38074
 
+## 開発環境
+
+- macOS 12.5.1
+- rustup 1.25.1 (bb60b1e89 2022-07-12)
+- rustc 1.66.0 (69f9c33d7 2022-12-12)
+- cargo 1.66.0 (d65d197ad 2022-11-15)
+
 ## 目次
 
-- [ ] はじめに
-- [ ] 1. 事始め
+- [x] はじめに
+- [x] 1. 事始め
 - [ ] 2. 数当てゲームのプログラミング
 - [ ] 3. 一般的なプログラミングの概念
 - [ ] 4. 所有権を理解する
@@ -33,3 +40,32 @@ Rust やる
 - [ ] 19. 高度な機能
 - [ ] 20. 最後のプロジェクト：マルチスレッドの Web サーバを構築する
 - [ ] 21. 付録
+
+## 用語
+
+- rustup
+  - Rust のバージョンと関連するツールを管理する CLI ツール
+- cargo
+  - Rust のパッケージマネージャ兼ビルドシステム
+- クレート crate
+  - Cargo によって管理される Rust のパッケージのこと。Python や Node.js などのパッケージの Rust 版の呼び方。
+- `Cargo.toml`
+  - Cargo プロジェクトの設定ファイル
+- `Cargo.lock`
+  - Cargo プロジェクトの依存関係のバージョンを記録、固定するためのファイル。`cargo build` を初めて実行したときに Cargo プロジェクトのルートディレクトリに生成される。手動で変更する必要はない。
+
+## 使ったコマンド
+
+```sh
+# rustc
+rustc main.rs
+
+# cargo
+cargo new [project name]
+cargo init
+cargo build           # 開発用ビルド（最適化なし、ビルド時間短い、実行速度遅い）
+cargo build --release # リリース用ビルド（最適化あり、ビルド時間長い、実行速度速い）
+cargo run
+cargo run --release
+cargo check
+```
