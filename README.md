@@ -75,4 +75,5 @@ cargo build --release # リリース用ビルド（最適化あり、ビルド�
 cargo run
 cargo run --release
 cargo check
+cargo update
 ```
