@@ -1,3 +1,5 @@
+mod sections;
+
 fn main() {
-    println!("Hello, world!");
+    sections::sec01::main();
 }
