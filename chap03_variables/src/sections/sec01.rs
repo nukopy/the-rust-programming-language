@@ -7,7 +7,11 @@ fn get_max_points() -> u32 {
     return MAX_POINTS; // 定数は当然関数の返り値として設定できる
 }
 
-pub fn main() {
+pub fn main(is_do: bool) {
+    if !is_do {
+        return;
+    }
+
     println!("===== chap01 =====");
     test_mutability();
     test_const();

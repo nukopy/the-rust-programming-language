@@ -2,7 +2,11 @@ extern crate chap03_variables;
 
 // use chap03_variables::utils; // ここだと mod "scholar_type" 内で utils の名前解決ができない
 
-pub fn main() {
+pub fn main(is_do: bool) {
+    if !is_do {
+        return;
+    }
+
     println!("===== chap02 =====");
     scholar_types::main();
     compound_types::main();
