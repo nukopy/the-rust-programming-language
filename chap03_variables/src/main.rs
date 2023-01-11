@@ -1,6 +1,7 @@
 mod sections;
 
 fn main() {
-    sections::sec01::main();
-    sections::sec02::main();
+    sections::sec01::main(true);
+    sections::sec02::main(true);
+    sections::sec03::main(true);
 }
