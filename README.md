@@ -83,4 +83,5 @@ cargo run
 cargo run --release
 cargo check
 cargo update
+cargo test
 ```
