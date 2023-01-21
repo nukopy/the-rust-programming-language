@@ -48,6 +48,7 @@ mod loop_ {
         test_break_continue();
     }
 
+    #[allow(dead_code)]
     fn test_infinite_loop() {
         loop {
             println!("again!");
