@@ -1,4 +1,9 @@
+mod practice;
+mod struct_basics;
+mod types;
+
 fn main() {
     println!("===== The Book chap05 struct =====");
-    println!("Hello, world!");
+    struct_basics::main();
+    practice::main();
 }
