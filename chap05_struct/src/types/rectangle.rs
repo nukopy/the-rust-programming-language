@@ -4,6 +4,7 @@ pub struct Rectangle {
     pub height: u32,
 }
 
+// 関連関数
 impl Rectangle {
     pub fn create(width: u32, height: u32) -> Rectangle {
         Rectangle { width, height }
@@ -18,6 +19,7 @@ impl Rectangle {
     }
 }
 
+// メソッド
 impl Rectangle {
     pub fn area(&self) -> u32 {
         self.width * self.height
@@ -93,7 +95,7 @@ mod tests {
 
     #[test]
     fn test_area() {
-        // テスト項目: area メソッドで面積が計算される
+        // テスト項目: area メソッドで面積が正しく計算される
         // given (前提条件):
         let width = 30;
         let height = 50;
