@@ -1,3 +1,5 @@
+mod sec01;
+
 fn main() {
-    println!("Hello, world!");
+    sec01::main();
 }
