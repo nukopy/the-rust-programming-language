@@ -1,6 +1,7 @@
 use std::thread;
 use std::time::Duration;
 
+#[allow(dead_code)]
 pub fn main() {
     println!("===== sec01 =====");
     handle_join_after_for_loop();
