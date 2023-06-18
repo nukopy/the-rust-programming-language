@@ -78,20 +78,34 @@ Rust "The Book" やる
 - `Cargo.lock`
   - Cargo プロジェクトの依存関係のバージョンを記録、固定するためのファイル。`cargo build` を初めて実行したときに Cargo プロジェクトのルートディレクトリに生成される。手動で変更する必要はない。
 
-## 使ったコマンド
+## Commands
 
 ```sh
 # rustc
 rustc main.rs
 
-# cargo
+# initialize Cargo project
 cargo new [project name]
 cargo init
+
+# build
 cargo build           # 開発用ビルド（最適化なし、ビルド時間短い、実行速度遅い）
 cargo build --release # リリース用ビルド（最適化あり、ビルド時間長い、実行速度速い）
+
+# run (build & run)
 cargo run
 cargo run --release
+
+# compiler check without generate binary
 cargo check
-cargo update
+
+# run test
 cargo test
+
+# update dependencies
+cargo update
+
+# watch (hot reload)
+cargo install cargo-watch
+cargo watch -x run
 ```
