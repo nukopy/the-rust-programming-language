@@ -4,7 +4,7 @@ use std::sync::{Arc, Mutex};
 use std::thread;
 use std::time::Duration;
 
-// #[allow(dead_code)]
+#[allow(dead_code)]
 pub fn main() {
     println!("===== sec03 =====");
     shared_state_concurrency_hello_world();
