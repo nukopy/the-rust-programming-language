@@ -47,7 +47,7 @@ Rust "The Book" やる
 - [ ] 13. 関数型言語の機能：イテレータとクロージャ
 - [ ] 14. Cargo と Crates.io についてより詳しく
 - [ ] 15. スマートポインタ
-- [ ] 16. 恐れるな！並行性（[日](https://doc.rust-jp.rs/book-ja/ch16-00-concurrency.html#%E6%81%90%E3%82%8C%E3%82%8B%E3%81%AA%E4%B8%A6%E8%A1%8C%E6%80%A7) | [英](https://doc.rust-lang.org/book/ch16-00-concurrency.html)）
+- [x] 16. 恐れるな！並行性（[日](https://doc.rust-jp.rs/book-ja/ch16-00-concurrency.html#%E6%81%90%E3%82%8C%E3%82%8B%E3%81%AA%E4%B8%A6%E8%A1%8C%E6%80%A7) | [英](https://doc.rust-lang.org/book/ch16-00-concurrency.html)）
   - 16.1. スレッドを使用してコードを同時に走らせる
   - 16.2. メッセージ受け渡しを使ってスレッド間でデータを転送する
   - 16.3. 状態共有並行性
