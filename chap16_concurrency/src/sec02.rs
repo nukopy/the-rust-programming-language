@@ -2,6 +2,7 @@ use std::sync::mpsc;
 use std::thread;
 use std::time::Duration;
 
+#[allow(dead_code)]
 pub fn main() {
     println!("===== sec02 =====");
     message_passing_hello_world();
@@ -34,7 +35,8 @@ fn message_passing_hello_world() {
 fn message_passing_mpsc() {
     println!("===== message_passing_mpsc =====");
     let (tx, rx) = mpsc::channel::<String>();
-    let tx1 = mpsc::Sender::clone(&tx);
+    // let tx1 = mpsc::Sender::clone(&tx);
+    let tx1 = tx.clone();
 
     // spawned thread 1
     thread::spawn(move || {
